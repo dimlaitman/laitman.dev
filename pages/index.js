@@ -13,28 +13,84 @@ export default function Home() {
           <p>
             NEXX - это стартап, состоящий из децентрализованной команды широкого
             спектра услуг - от дизайна иконок и создания сайтов до написания
-            смарт контрактов.
+            смарт контрактов.{" "}
+            <button
+              disabled="disabled"
+              className="rounded-none border-2 text-2xl p-0.5 border-black hover:border-gray-500"
+            >
+              Хочу в команду
+            </button>
           </p>
-          <p>
-            NEXX - это стартап, состоящий из децентрализованной команды широкого
-            спектра услуг - от дизайна иконок и создания сайтов до написания
-            смарт контрактов.
+          <p className="my-10">
+            Мы используем только самые передовые инструменты 2к22:
           </p>
-          <p>
-            NEXX - это стартап, состоящий из децентрализованной команды широкого
-            спектра услуг - от дизайна иконок и создания сайтов до написания
-            смарт контрактов.
-          </p>
-          <p>
-            NEXX - это стартап, состоящий из децентрализованной команды широкого
-            спектра услуг - от дизайна иконок и создания сайтов до написания
-            смарт контрактов.
-          </p>
-          <p>
-            NEXX - это стартап, состоящий из децентрализованной команды широкого
-            спектра услуг - от дизайна иконок и создания сайтов до написания
-            смарт контрактов.
-          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 justify-center text-center">
+            <div>
+              <div className="justify-center flex gap-5 text-center">
+                <img
+                  className="w-16 h-16 md:w-12 md:h-12"
+                  src="/images/figma.png"
+                  alt="figma"
+                />
+                <img
+                className="w-16 h-16 md:w-12 md:h-12"
+                  src="/images/figma.png"
+                  alt="figma"
+                />
+                <img
+                className="w-16 h-16 md:w-12 md:h-12"
+                  src="/images/figma.png"
+                  alt="figma"
+                />
+              </div>
+              <div>
+              <p>Прототип</p>
+              <p>*Figma</p>
+              <p>*Framer</p>
+              <p>*Sketch</p>
+              </div>
+            </div>
+            <div>
+              <div className="justify-center flex gap-5 text-center">
+                <img
+                  className="w-12 h-12"
+                  src="/images/figma.png"
+                  alt="figma"
+                />
+                <img
+                  className="w-12 h-12"
+                  src="/images/figma.png"
+                  alt="figma"
+                />
+                <img
+                  className="w-12 h-12"
+                  src="/images/figma.png"
+                  alt="figma"
+                />
+              </div>
+              <div>Дизайн</div>
+            </div>
+            <div>
+              <div className="justify-center flex gap-5 text-center">
+                <img
+                  className="w-12 h-12"
+                  src="/images/figma.png"
+                  alt="figma"
+                />
+                <img
+                  className="w-12 h-12"
+                  src="/images/figma.png"
+                  alt="figma"
+                />
+                <img
+                  className="w-12 h-12"
+                  src="/images/figma.png"
+                  alt="figma"
+                />
+              </div>
+              <div>Дизайн</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
