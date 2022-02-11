@@ -1,14 +1,12 @@
-import { Header } from '.';
+import { Header } from ".";
 
 const Layout = ({ children }) => {
   return (
-      <>
-        <div className="flex">
-        <Header className="fixed"/>
-        {children}
-        </div>
-      </>
-      )
+    <>
+      <Header />
+      {children}
+    </>
+  );
 };
 
 export default Layout;
