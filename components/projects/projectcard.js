@@ -146,7 +146,7 @@ export default function ProjectCard() {
     <div className="mx-auto px-1 pb-5 max-w-5xl grid grid-cols-1 md:grid-cols-2 text-3xl items-center justify-center min-h-full gap-4 place-content-stretch">
       {projects.map((project) => {
         return (
-          <div className="mb-5 flex flex-col border-y md:border-x md:border-y-0 p-1 rounded-xl border-pink-300 text-gray-300 w-full w-min-90 mx-auto my-auto">
+          <div className="mb-5 hover:animate-pulse flex flex-col border-y md:border-x md:border-y-0 p-1 rounded-xl border-pink-300 text-gray-300 w-full w-min-90 mx-auto my-auto">
             <img
               src={project.image}
               alt="mountains"

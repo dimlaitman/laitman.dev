@@ -9,7 +9,7 @@ const tags = [
 
 export default function Tag() {
   return (
-    <div className="px-2 my-3 flex flex-wrap">
+    <div className="px-2 my-3 flex flex-wrap max-w-5xl">
       {tags.map((link, index) => {
         return (
           <ul>
