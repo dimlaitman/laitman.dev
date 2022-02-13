@@ -1,13 +1,7 @@
 import "../styles/globals.css";
 import { Layout } from "../components";
-import {
-  ApolloClient,
-  InMemoryCache,
-  ApolloProvider,
-  useQuery,
-  gql
-} from "@apollo/client";
-import client from "../services/apolloClient.js";
+import { ApolloProvider } from "@apollo/client";
+import client from "../apolloClient";
 
 function MyApp({ Component, pageProps }) {
   return (
