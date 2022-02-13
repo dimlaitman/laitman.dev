@@ -2,8 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 const categories = [
-  { name: "Мысли", slug: "/" },
-  { name: "Мысли", slug: "/" },
+  { name: "Мысли", slug: "aboutme" },
+  { name: "Мысли", slug: "aboutme" },
 ];
 
 const Header = () => {

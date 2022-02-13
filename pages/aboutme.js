@@ -103,10 +103,6 @@ export default function AboutMe() {
         <br />
         <br />
         Открыт для интересных предложений, идей и задач. <br />
-        <br />Я всегда доступен в{" "}
-        <a className="underline decoration-white">Discord</a>,{" "}
-        <a className="underline decoration-white">Telegram</a> или{" "}
-        <a className="underline decoration-white ">WhatsApp</a>.
       </span>
     </div>
   );
