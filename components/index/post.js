@@ -6,9 +6,7 @@ export default function Post() {
 
   return (
     <div className="mx-auto px-1 pb-5 max-w-5xl grid grid-cols-1 md:grid-cols-2 text-3xl min-h-full gap-4 place-content-stretch">
-{data.posts.map((post, index) => (
-  <p key={index}>{post.title}</p>
-))}
+1
     </div>
   );
 }
