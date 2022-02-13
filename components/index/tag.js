@@ -9,21 +9,14 @@ const tags = [
 
 export default function Tag() {
   return (
-    <div className="px-2 my-3 flex flex-wrap max-w-5xl">
-      {tags.map((link, index) => {
-        return (
-          <ul>
-            <Link href={link.slug}>
-              <li
-                className="m-1 cursor-pointer underline decoration-pink-300"
-                key={index}
-              >
-                {link.name}
-              </li>
-            </Link>
-          </ul>
-        );
-      })}
-    </div>
+    <ul className="px-2 my-3 flex flex-wrap max-w-5xl">
+      {tags.map((link, index) => (
+        <Link href={link.slug} key={index}>
+          <li className="m-1 cursor-pointer underline decoration-pink-300">
+            {link.name}
+          </li>
+        </Link>
+      ))}
+    </ul>
   );
 }

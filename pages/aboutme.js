@@ -97,7 +97,7 @@ export default function AboutMe() {
         техно, зал, бег, баня, путешествия, побывал в 33 странах мира. В
         основном базируюсь в Москве и на Бали, к переездам отношусь позитивно.
         Подробнее о моих увлечениях{" "}
-        <Link href="/hobby">
+        <Link href="/hobby" key="hobby">
           <a className="underline decoration-white">здесь</a>
         </Link>
         <br />
