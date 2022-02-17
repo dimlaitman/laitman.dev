@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ProjectCard({ projectContent }) {
   return (
@@ -32,9 +33,17 @@ export default function ProjectCard({ projectContent }) {
               </div>
               <div className="flex justify-between align-middle px-2">
                 <div className="text-base mt-1">Hours: {project.difficult}</div>
-                <a className="animate-pulse mt-1 text-2xl font-thin cursor-pointer">
-                  Order
-                </a>
+                <Link
+                href="https://www.upwork.com/workwith/laitman"
+                target="_top"
+                passHref
+
+              >
+                <button className="animate-pulse text-lg inline-flex justify-center items-center">
+                  ORDER
+                  <span className="relative inline-flex mx-2 rounded-full h-3 w-3 bg-green-500"></span>
+                </button>
+              </Link>
                 <div className="text-base mt-1">Price: {project.price}$</div>
               </div>
             </div>

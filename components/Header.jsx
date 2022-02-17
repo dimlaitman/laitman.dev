@@ -8,7 +8,7 @@ const categories = [
 
 const Header = () => {
   return (
-    <header className="mx-auto backdrop-blur-xl p-2 z-10 max-w-6xl border-b border-black text-sm text-black h-12 flex sticky justify-between items-center top-0  ">
+    <header className="mx-auto backdrop-blur-xl px-2 z-10 max-w-6xl border-b border-black text-sm text-black h-12 flex sticky justify-between items-center top-0  ">
       <p className="text-2xl animate-pulse">LAITMAN</p>
       <ul className="flex flex-row justify-center space-x-4 cursor-pointer uppercase">
         {categories.map((link, index) => (

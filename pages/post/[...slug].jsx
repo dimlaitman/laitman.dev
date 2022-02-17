@@ -5,14 +5,22 @@ import { RichText } from "@graphcms/rich-text-react-renderer";
 
 export default function PostDetails({ post }) {
   return (
-    <div className="mx-auto max-w-6xl mt-10 grid grid-cols-1 text-xl">
-      <div className=" break-words flex px-2 md:px-0 flex-col">
-        <div className=" text-5xl font-thin">{post.title}</div>
-        <div className="flex justify-between border-b border-black mb-10">
-          <div className="pb-2 text-md decoration-black">{post.date}</div>
-          <div className="text-md underline">{post.tag}</div>
+    <div className="mx-auto max-w-6xl grid grid-cols-1 text-xl">
+        <button
+          className="flex p-3 hover:underline ml-2 tect-thin focus:underline align-middle justify-start decoration-black text-sm uppercase"
+          onClick={()=>history.back()}
+        >
+          {"<"}
+        </button>
+      <div className=" break-word flex md:px-0 flex-col">
+        <div className=" text-5xl px-2 font-thin">{post.title}</div>
+        <div className="flex px-2 justify-between border-b border-black mb-10">
+          <div className="pb-2  text-md decoration-black">{post.date}</div>
+          <div className="text-md  underline">{post.tag}</div>
         </div>
-        <RichText content={post.content.raw} />
+        <div className="px-2">
+          <RichText content={post.content.raw} />
+        </div>
       </div>
     </div>
   );
