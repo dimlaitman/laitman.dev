@@ -7,16 +7,20 @@ html, body {
   min-height: 100vh;
   min-width: 300px;
   line-height: 10px;
-  font-family: Inter, "Helvetica Neue", Helvetica, sans-serif;
-  background-color: rgb(0, 0, 0);
-  color: rgb(246, 246, 246);
-  scroll-behavior: smooth;
-  text-rendering: geometricprecision;
+  font-family: sans-serif, "Neue Haas Grotesk","Helvetica Neue", Helvetica;
+  background-color: #F5F5F5;
+  color: #000000;
+
 }
 
 .button:hover {
   background: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
 }
 
 .button {
