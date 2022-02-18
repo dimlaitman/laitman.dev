@@ -13,10 +13,10 @@ export default function PostDetails({ post }) {
           {"<"}
         </button>
       <div className=" break-word flex md:px-0 flex-col">
-        <div className=" text-5xl px-2 font-thin">{post.title}</div>
-        <div className="flex px-2 justify-between border-b border-black mb-10">
-          <div className="pb-2  text-md decoration-black">{post.date}</div>
-          <div className="text-md  underline">{post.tag}</div>
+        <div className=" text-5xl px-2 font-thin uppercase">{post.title}</div>
+        <div className="flex px-2 justify-between border-b border-black mb-2">
+          <div className="pb-2  text-sm decoration-black">{post.date}</div>
+          <div className="text-sm  underline uppercase">{post.tag}</div>
         </div>
         <div className="px-2">
           <RichText content={post.content.raw} />
