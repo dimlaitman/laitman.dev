@@ -42,8 +42,8 @@ export default function PostComponent({ postContent }) {
                     priority={true}
                     src={post.coverImage.url}
                     alt="mountains"
-                    width={300}
-                    height={300}
+                    width={640}
+                    height={360}
                   />
                   <div className="md:h-20 md:overflow-y-scroll py-1 px-2 leading-none ">
                     <p className="float-right mt-1 text-xs">{post.tag}</p>

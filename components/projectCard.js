@@ -11,8 +11,8 @@ export default function ProjectCard({ projectContent }) {
               <Image
                 priority={true}
                 src={project.image[0].url}
-                width={300}
-                height={300}
+                width={640}
+                height={360}
                 alt="mountains"
                 className="w-full"
               />
