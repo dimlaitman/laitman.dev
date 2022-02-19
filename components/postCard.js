@@ -18,13 +18,14 @@ export default function PostComponent({ postContent }) {
       <ul className="px-2 flex max-w-6xl">
         {dedupedTags.map((tag, index) => {
           return (
-            <button
-              key={index}
-              className="hover:underline focus:underline py-3 px-1 decoration-black text-xs uppercase"
-              onClick={() => setTag(tag)}
-            >
-              {tag}
-            </button>
+            <li key={index}>
+              <button
+                className="hover:underline focus:underline py-3 px-1 decoration-black text-xs uppercase"
+                onClick={() => setTag(tag)}
+              >
+                {tag}
+              </button>
+            </li>
           );
         })}
       </ul>
