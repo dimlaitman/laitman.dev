@@ -35,7 +35,7 @@ export const getProjectsQuery = {
           url
         }
         post {
-          text
+          raw
         }
         technology
         difficult

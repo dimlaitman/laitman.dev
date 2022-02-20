@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { RichText } from "@graphcms/rich-text-react-renderer";
 
 export default function ProjectCard({ projectContent }) {
   return (
@@ -21,7 +22,7 @@ export default function ProjectCard({ projectContent }) {
                   {project.title}
                 </p>
                 <p className="leading-none text-base font-thin pt-2">
-                  {project.post.text}
+                <RichText content={project.post.raw} />
                 </p>
               </div>
               <div className="my-3 mx-1 gap-1 grid grid-cols-5  ontent-center">
