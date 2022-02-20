@@ -31,7 +31,7 @@ export default function PostComponent({ postContent }) {
       </ul>
 
       <div className="mx-auto md:px-0 pb-5 grid grid-cols-1 md:grid-cols-2 text-3xl items-center justify-center min-h-full gap-2 place-content-stretch uppercase">
-        {postContent.posts.map((post, index) => {
+        {postContent.posts.slice(0).reverse().map((post, index) => {
           if (post.tag === tag || "#all" === tag) {
             return (
               <Link href={`/post/${post.slug}`} key={index} passHref>

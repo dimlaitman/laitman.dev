@@ -5,7 +5,7 @@ export default function ProjectCard({ projectContent }) {
   return (
     <div>
       <div className="font-thin mx-auto pt-10 pb-5 max-w-6xl grid grid-cols-1 md:grid-cols-2 text-3xl items-center justify-center min-h-full gap-4 place-content-stretch uppercase">
-        {projectContent.projects.map((project, index) => {
+        {projectContent.projects.slice(0).reverse().map((project, index) => {
           return (
             <div className=" mb-5 flex flex-col border-b  border-black  w-full w-min-90" key={index}>
               <Image
