@@ -30,6 +30,7 @@ export default function AboutMe({ aboutme }) {
           content={aboutme.pages[0].seo.image.url}
           key="image"
         />
+        <meta property="of:site_name" content="LAITMAN DEV"/>
       </Head>
       <div className="font-thin mx-auto px-2 pt-10 max-w-6xl flex text-2xl">
         <span className="break-normal bg-clip-text text-transparent text-black">

@@ -3,8 +3,10 @@ import client from "../../apolloClient";
 import React from "react";
 import { RichText } from "@graphcms/rich-text-react-renderer";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function PostDetails({ post }) {
+
   return (
     <>
       <Head>
@@ -14,7 +16,7 @@ export default function PostDetails({ post }) {
         <meta property="image" content={post.seo.image.url} />
         <meta name="og:type" content="website" />
         <meta property="og:title" content={post.seo.title} key="title" />
-        <meta property="og:url" content={post.slug} key="url" />
+        <meta property="og:url" content={`${"https://www.laitman.dev/post/"}${post.slug}`} key="url" />
         <meta
           property="og:description"
           content={post.seo.description}
@@ -23,12 +25,11 @@ export default function PostDetails({ post }) {
         <meta property="og:image" content={post.seo.image.url} key="image" />
       </Head>
       <div className="mx-auto max-w-6xl grid grid-cols-1 text-xl">
-        <button
-          className="flex p-3 hover:underline ml-2 tect-thin focus:underline align-middle justify-start decoration-black text-sm uppercase"
-          onClick={() => history.back()}
-        >
-          {"<"}
-        </button>
+        <Link href="/" key="index" passHref>
+          <button className="flex p-3 hover:underline ml-2 tect-thin focus:underline align-middle justify-start decoration-black text-sm uppercase">
+            {"<"}
+          </button>
+        </Link>
         <div className=" break-word flex md:px-0 flex-col">
           <div className=" text-5xl px-2 font-thin uppercase">{post.title}</div>
           <div className="flex px-2 justify-between border-b border-black mb-2">

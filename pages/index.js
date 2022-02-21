@@ -27,7 +27,7 @@ export default function Home({ posts }) {
           content="The Personal Site & Portfolio of Dim Laitman"
           key="title"
         />
-        <meta property="og:url" content="/" key="url" />
+        <meta property="og:url" content="https://www.laitman.dev/" key="url" />
         <meta
           property="og:description"
           content="You can see here all my React, Next and other projects"
@@ -38,6 +38,7 @@ export default function Home({ posts }) {
           content="https://media.graphcms.com/BurI7G1aSQuBK5fEJ2pA"
           key="image"
         />
+        <meta property="of:site_name" content="LAITMAN DEV"/>
         <meta name="yandex-verification" content="5f8e0c925278e278" />
       </Head>
       <PostComponent postContent={posts} />
