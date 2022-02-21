@@ -12,7 +12,7 @@ export default function PostComponent({ postContent }) {
   });
 
   let dedupedTags = Array.from(new Set(tags));
-
+  
   return (
     <div className="max-w-6xl mx-auto">
       <ul className="px-2 flex max-w-6xl">

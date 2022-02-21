@@ -51,9 +51,16 @@ export const getAboutmeQuery = {
       pages {
         title
         content {
-          markdown
-          html
           raw
+        }
+        slug
+        seo {
+          title
+          description
+          keywords
+          image {
+            url
+          }
         }
       }
     }
