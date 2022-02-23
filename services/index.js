@@ -38,8 +38,9 @@ export const getProjectsQuery = {
           raw
         }
         technology
-        difficult
+        hours
         price
+        link
       }
     }
   `,

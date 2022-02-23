@@ -18,6 +18,17 @@ export default function ProjectCard({ projectContent }) {
                 className="w-full"
               />
               <div className="md:h-20 px-2 md:overflow-y-scroll">
+              <Link
+              href={project.link}
+              target="_top"
+              passHref
+
+            >
+              <button className="float-right p-2 mt-2  animate-pulse text-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 10 10"><path d="M7.31 1.57H.56V0H10v9.44H8.43V2.7L1.1 10 0 8.89l7.31-7.32z" ></path></svg>
+                <span className="relative inline-flex mx-2"></span>
+              </button>
+            </Link>
                 <p className="text-xl font-thin leading-none pt-1">
                   {project.title}
                 </p>
@@ -33,7 +44,7 @@ export default function ProjectCard({ projectContent }) {
                 ))}
               </div>
               <div className="flex justify-between align-middle px-2">
-                <div className="text-base mt-1">Hours: {project.difficult}</div>
+                <div className="text-base mt-1">Hours: {project.hours}</div>
                 <Link
                 href="https://www.upwork.com/workwith/laitman"
                 target="_top"

@@ -17,6 +17,7 @@ html, body {
   background: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
 }
+
 pre {
   text-align: left; white-space: pre; word-spacing: normal; word-break: normal; overflow-wrap: normal; color: rgb(195, 206, 227); background: rgb(38, 50, 56); font-family: "Roboto Mono", monospace; font-size: 1em; line-height: 1.5em; tab-size: 4; hyphens: none; overflow: auto; position: relative; margin: 0.5em 0px; padding: 1.25em 1em;
 }
