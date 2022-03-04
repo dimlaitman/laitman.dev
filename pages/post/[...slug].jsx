@@ -1,12 +1,10 @@
-import { gql } from "@apollo/client";
 import client from "../../apolloClient";
-import React from "react";
-import { RichText } from "@graphcms/rich-text-react-renderer";
 import Head from "next/head";
 import Link from "next/link";
+import { RichText } from "@graphcms/rich-text-react-renderer";
+import { gql } from "@apollo/client";
 
 export default function PostDetails({ post }) {
-
   return (
     <>
       <Head>
@@ -16,7 +14,11 @@ export default function PostDetails({ post }) {
         <meta property="image" content={post.seo.image.url} />
         <meta name="og:type" content="website" />
         <meta property="og:title" content={post.seo.title} key="title" />
-        <meta property="og:url" content={`${"https://www.laitman.dev/post/"}${post.slug}`} key="url" />
+        <meta
+          property="og:url"
+          content={`${"https://www.laitman.dev/post/"}${post.slug}`}
+          key="url"
+        />
         <meta
           property="og:description"
           content={post.seo.description}
