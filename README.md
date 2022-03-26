@@ -1,8 +1,10 @@
 LAITMAN DEV | The Personal Site & Portfolio of Dim Laitman
 
 
+
 My first project using NEXT and GraQL technologies. 
 There were many design options what i tested, but in the end I decided to make it an minimal and light.
+
 
 
 Technologies that I used:
@@ -12,6 +14,7 @@ Technologies that I used:
 * Apollo
 * GraphCMS
 * Vercel
+
 
 
 Features:
