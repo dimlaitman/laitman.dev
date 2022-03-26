@@ -22,3 +22,6 @@ Features:
 * High performance optimization thanks to next.js
 * Perfect SEO support
 * High readability
+
+
+![alt text](https://media.graphcms.com/sUjtn56PRBGNnnixgI4N?_ga=2.121210568.1767768925.1648313574-34955729.1648313574)
