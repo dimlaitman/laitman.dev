@@ -1,9 +1,9 @@
-LAITMAN DEV | The Personal Site & Portfolio of Dim Laitman
+The Personal Site & Portfolio of Dim Laitman
 
 
 
-My first project using NEXT and GraQL technologies. 
-There were many design options what i tested, but in the end I decided to make it an minimal and light.
+My first project where i use Next.js and GraphQL technologies together. 
+There were many design options what i tested, but in the end I decided to make it a minimalistic and light.
 
 
 
